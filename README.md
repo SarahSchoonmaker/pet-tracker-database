@@ -2,6 +2,8 @@
 
 A database built with Django and AngularJS, and Django Rest Framework for the API.
 
+Demo: https://petdatabasedjango.herokuapp.com/
+
 ## Scenario/Requirements
 
 A pet store wants a way to keep track of their dogs and cats.
