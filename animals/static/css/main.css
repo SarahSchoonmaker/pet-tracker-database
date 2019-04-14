@@ -1,0 +1,131 @@
+header{
+    background-color: #333;
+    padding: 10px 0 2px;
+}
+header h1{
+    margin: 0;
+}
+header h1>a, header h1>a:hover, header h1>a:active{
+    color: #FFF;
+    text-decoration: none;
+}
+header nav{
+    margin-top: -1px;
+}
+form.small-width {
+    max-width: 370px;
+}
+form.small-width input[type="text"], form.small-width input[type="password"]{
+    width: 100%;
+}
+form input[type="text"][disabled="disabled"]{
+    color: #a8a8a8;
+}
+form div.error{
+    color: #e74c3c;
+    margin: -1em 0 -.5em;
+}
+ul.inline-list, ul.inline-list>li:first-child{
+    margin-left: 0;
+}
+li.showing, li.not-showing{
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 1.618rem 3.236rem;
+    font-size: 1.618rem;
+    margin-bottom: 1.618rem;
+    margin-top: 1em;
+    border-style: solid;
+    border-width: 2px;
+}
+li.showing{
+    color: white;
+    background-color: #4bbd93;
+    border-color: #4bbd93;
+}
+li.not-showing{
+    color: #666666;
+    background: none;
+    border-color: #666666;
+}
+button#add-pet{
+    margin: 1.3em 0;
+}
+#pet-form .fa-arrow-left{
+    margin-right: .3em;
+}
+table#pets th, table#pets td{
+    padding: .5rem;
+}
+tr.pet:hover>td{
+    background: #eee;
+}
+*[ng-click]{
+    cursor: pointer;
+}
+th[ng-click], li[ng-click]{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+th.ascending{
+    text-decoration: underline;
+}th.descending{
+    text-decoration: overline;
+}
+.horizontal-table th{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding: .5rem 1rem .5rem 0;
+}
+.animal-scientific{
+    margin: 0 .5em;
+    color: #999;
+    text-transform: lowercase;
+}
+#delete-verification{
+    border: 2px solid #c0392b;
+    padding: 15px;
+}
+#delete-verification p{
+    margin: 0;
+}
+#delete-verification input{
+    width: 100%;
+    margin: .5rem 0 1.5rem;
+}
+.container{
+    padding: 2rem 0;
+}
+
+input[type="date"]{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #333333;
+    border: none;
+    line-height: inherit;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+input[type="date"]:focus{
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.button[disabled="disabled"]{opacity: .5 !important;}
+
+.button.plain{background-color: #95a5a6;-webkit-box-shadow: 0 4px 0 #7f8c8d;box-shadow: 0 4px 0 #7f8c8d;}
+.button.plain:hover{-webkit-box-shadow: 0 2px 0 #7f8c8d;box-shadow: 0 2px 0 #7f8c8d;}
+.button.plain:active{-webkit-box-shadow: none;box-shadow: none;}
+
+.button.primary{background-color: #3498db;-webkit-box-shadow: 0 4px 0 #2980b9;box-shadow: 0 4px 0 #2980b9;}
+.button.primary:hover{-webkit-box-shadow: 0 2px 0 #2980b9;box-shadow: 0 2px 0 #2980b9;}
+.button.primary:active{-webkit-box-shadow: none;box-shadow: none;}
+
+.button.danger{background-color: #e74c3c;-webkit-box-shadow: 0 4px 0 #c0392b;box-shadow: 0 4px 0 #c0392b;}
+.button.danger:hover{-webkit-box-shadow: 0 2px 0 #c0392b;box-shadow: 0 2px 0 #c0392b;}
+.button.danger:active{-webkit-box-shadow: none;box-shadow: none;}

@@ -1,0 +1,65 @@
+<div id="pet-form" class="container small-width">
+    <div class="right">
+        <i class="fa fa-arrow-left" title="Back" ng-click="back()"
+           ng-hide="!form.pet.animal"></i>
+        <i class="fa fa-times" title="Cancel new pet"
+           ng-click="cancelNewPet()"></i>
+    </div>
+
+    <div id="choose-animal" class="text-center" ng-show="!form.pet.animal">
+        What type of animal would you like to add?
+
+        <ul>
+            <li id="add-[[ animal.name | slugify ]]" class="button-big"
+                ng-click="form.pet.animal=animal"
+                ng-repeat="animal in animals | orderBy: 'name'">
+                [[ animal.name ]]
+            </li>
+        </ul>
+    </div>
+
+    <div id="choose-breed" class="text-center"
+         ng-show="form.pet.animal && !form.pet.breed">
+        What breed?
+
+        <ul>
+            <li id="add-[[ breed.name | slugify ]]" class="button-big"
+                ng-click="form.pet.breed=breed"
+                ng-repeat="breed in form.pet.animal.breeds | orderBy: 'name'">
+                [[ breed.name ]]
+            </li>
+        </ul>
+    </div>
+
+    <form class="small-width" ng-show="form.pet.animal && form.pet.breed">
+        <p>
+            <label>Animal</label>
+            <input type="text" ng-model="form.pet.animal.name"
+                   disabled="disabled">
+        </p>
+        <p>
+            <label>Breed</label>
+            <input type="text" ng-model="form.pet.breed.name"
+                   disabled="disabled">
+        </p>
+        <p>
+            <label>Name</label>
+            <input type="text" id="add-name" ng-model="form.pet.name" autofocus>
+            <div class="error" ng-repeat="error in form.errors.name">
+                [[ error ]]
+            </div>
+        </p>
+        <p>
+            <label>Birthday</label>
+            <input type="date" id="add-birthday" ng-model="form.pet.birthday">
+            <div class="error" ng-repeat="error in form.errors.birthday">
+                [[ error ]]
+            </div>
+        </p>
+        <p class="clearfix">
+            <button id="save-new-pet" class="button right"
+                    ng-click="saveNewPet()">Save</button>
+        </p>
+    </form>
+
+</div>
