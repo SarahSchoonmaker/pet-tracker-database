@@ -25,9 +25,11 @@ The pet store wants to be able to:
 * delete a cat
 
 ## Screenshots
-(https://imgur.com/YhyVKoa)
-https://imgur.com/jrc0zPu
 
+### Login
+![Login](https://imgur.com/YhyVKoa)
+### Dashboard
+![Dashboard](https://imgur.com/jrc0zPu)
 
 ## Dev Environment
 
