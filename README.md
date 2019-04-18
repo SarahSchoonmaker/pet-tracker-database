@@ -27,9 +27,10 @@ The pet store wants to be able to:
 ## Screenshots
 
 ### Login
-![Login](https://imgur.com/YhyVKoa)
+![Imgur](https://i.imgur.com/YhyVKoa.png)
+
 ### Dashboard
-![Dashboard](https://imgur.com/jrc0zPu)
+![Imgur](https://i.imgur.com/jrc0zPu.png)
 
 ## Dev Environment
 
